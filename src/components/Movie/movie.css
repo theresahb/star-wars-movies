@@ -12,7 +12,31 @@
 .movie:hover {
     transition: .4s ease-in-out;
     box-shadow:  0 0 10px 3px #354d74,
-                 0 0 10px #415f8e;
+                0 0 10px #415f8e;
+}
+
+.movie:nth-child(1) {
+    background-image: url('../../images/bg-card-1.png');
+}
+
+.movie:nth-child(2) {
+    background-image: url('../../images/bg-card-2.png');
+}
+
+.movie:nth-child(3) {
+    background-image: url('../../images/bg-card-3.png');
+}
+
+.movie:nth-child(4) {
+    background-image: url('../../images/bg-card-4.png');
+}
+
+.movie:nth-child(5) {
+    background-image: url('../../images/bg-card-5.png');
+}
+
+.movie:nth-child(6) {
+    background-image: url('../../images/bg-card-6.png');
 }
 
 .title {

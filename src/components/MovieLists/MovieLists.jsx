@@ -28,7 +28,6 @@ const MovieLists = () => {
             .finally(() => {
                 setLoading(false)
             })
-
     }, [])
 
     return (
