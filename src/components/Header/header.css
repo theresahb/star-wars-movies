@@ -1,0 +1,26 @@
+svg {
+    width: 100%;
+}
+
+.logo {
+    width: 30rem;
+    fill: rgb(255, 232, 31);
+}
+
+@media (max-width: 1000px) {
+    .logo {
+        width: 25rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .logo {
+        width: 20rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .logo {
+        width: 15rem;
+    }
+}

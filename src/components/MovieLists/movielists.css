@@ -1,0 +1,56 @@
+.movie-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2rem;
+    place-content: center;
+    width: 100%;
+    padding: 0 0 2rem 0;
+}
+
+.load {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+}
+
+.loader {
+    fill: rgb(255, 232, 31);
+    animation: loader-spin infinite 2s linear;
+}
+
+.error {
+    text-align: center;
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+@keyframes loader-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 1000px) {
+    .movie-list {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 800px) {
+    .movie-list {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+    }
+}
+
+@media (max-width: 400px) {
+    .error {
+        font-size: 1rem;
+    }
+}
