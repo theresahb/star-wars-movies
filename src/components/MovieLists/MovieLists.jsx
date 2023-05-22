@@ -43,10 +43,10 @@ const MovieLists = () => {
             </div>}
             {error && <div className='error'>{`There is a problem fetching your data - ${error}`}</div>}
             <div className="movie-list">
-                {data && data.map((film) => {
+                {data && data.map((film, index) => {
                     return (
                         <div key={film.episode_id}>
-                            <Movie film={film} />
+                            <Movie film={film} index={index} />
                         </div>
                     )
                 })}

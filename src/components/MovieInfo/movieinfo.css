@@ -1,0 +1,117 @@
+.movie-details {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    color: rgb(255, 255, 255);
+}
+
+.backlink {
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 1rem;
+    opacity: .5;
+    text-decoration: none;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    row-gap: .8rem;
+    text-align: center;
+}
+
+.intro h1 {
+    font-size: 2.7rem;
+}
+
+.movie-info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    background-color: rgb(35, 35, 35);
+    padding: 2rem;
+    border-radius: 4px;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    row-gap: .7rem;
+}
+
+.description p:first-child {
+    opacity: .5;
+    font-size: 1.1rem;
+}
+
+.description p {
+    line-height: 1.7;
+}
+
+.characters {
+    border-top: 2px solid #57555585;
+    border-bottom: 2px solid #57555585;
+}
+
+.characters,
+.planets,
+.species,
+.starships,
+.vehicles {
+    display: flex;
+    flex-direction: column;
+    row-gap: .7rem;
+    padding: 1rem 0 1rem 1.1rem;
+}
+
+.planets,
+.species,
+.starships {
+    border-bottom: 2px solid #57555585;
+}
+
+.title p {
+    opacity: .5;
+    font-size: 1.1rem;
+    margin-left: -1.1rem;
+}
+
+.character {
+    columns: 200px 3;
+    line-height: 1.7rem;
+}
+
+.error {
+    font-size: .9rem;
+}
+
+@media (max-width: 800px) {
+    .backlink {
+        font-size: .8rem;
+    }
+
+    .intro h1 {
+        font-size: 1.8rem;
+    }
+
+    .description p:first-child,
+    .title p {
+        font-size: 1rem;
+    }
+
+    .intro p,
+    .description p,
+    .character li {
+        font-size: .9rem;
+    }
+
+    .movie-info {
+        padding: 1.5rem;
+    }
+}
