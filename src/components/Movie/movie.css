@@ -15,20 +15,20 @@
                  0 0 10px #415f8e;
 }
 
-.title {
+.movie-title {
     display: flex;
     flex-direction: column;
     row-gap: .3rem;
     
 }
 
-.title h2 a {
+.movie-title h2 a {
     text-decoration: none;
     font-size: 1.3rem;
     color: #ffffff;
 }
 
-.title p {
+.movie-title p {
     color: #ffffff;
     font-size: .9rem;
     opacity: .5;
@@ -54,9 +54,13 @@
     padding-top: 1rem;
 }
 
-.info a {
+.info  {
     text-decoration: none;
-    font-size: 1rem;
-    font-weight: 600;
+    font-size: .9rem;
+    font-weight: 400;
     color: rgb(255, 232, 31);
+}
+
+.movie-link {
+    text-decoration: none;
 }
